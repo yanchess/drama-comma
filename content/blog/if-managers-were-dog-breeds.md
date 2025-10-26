@@ -1,5 +1,5 @@
 ---
-date: '2025-10-14T13:19:09+03:00'
+date: '2025-10-25T13:19:09+03:00'
 title: "Paw-sitively managerial: 5 dog breeds that explain your boss"
 description: "A not-so-serious guide to manager personalities"
 summary: "A not-so-serious guide to manager personalities"

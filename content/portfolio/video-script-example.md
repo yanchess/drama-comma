@@ -1,6 +1,6 @@
 ---
 title: "Video script examples"
-date: 2024-01-15
+date: 2025-10-16
 tags: ["google cloud", "video", "technical writing", "video script"]
 description: "Scripts (narration texts) for multiple videos to help users familiarize with new concepts"
 cover:
