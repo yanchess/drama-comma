@@ -1,4 +1,5 @@
 ---
 title: "Blog"
-description: "Grammar traumas as they come"
+description: "Where I complain professionally about rogue semicolons and even more rogue SMEs"
+ShowBreadCrumbs: false
 ---
