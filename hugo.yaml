@@ -29,7 +29,7 @@ params:
   profileMode:
     enabled: true
     title: "Drama, comma, grammar trauma" # website heading
-    subtitle: "Because strategic obsession over great docs has a name"
+    subtitle: "Crafting great docs with strategic obsession, deadpan delivery, and Oxford commas"
     keywords: [Blog, Portfolio, PaperMod, Hugo]
     author: Me
     buttons:
