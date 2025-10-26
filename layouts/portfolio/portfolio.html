@@ -1,0 +1,47 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Content }}
+  <div class="post-description">
+    {{ .Content }}
+  </div>
+  {{- end }}
+</header>
+
+<div class="portfolio-grid">
+  {{- range (where .Site.RegularPages "Section" "portfolio") }}
+  {{- if not .Params.hidden }}
+  <article class="portfolio-item">
+    {{- if .Params.cover.image }}
+    <div class="portfolio-image">
+      <a href="{{ .Permalink }}">
+        <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
+      </a>
+    </div>
+    {{- end }}
+    <div class="portfolio-content">
+      <h2 class="portfolio-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h2>
+      <!--<div class="portfolio-meta">
+        <time>{{ .Date.Format "January 2006" }}</time>
+      </div><-->
+      <div class="portfolio-description">
+        {{ .Params.description | default .Summary }}
+      </div>
+      {{- if .Params.tags }}
+      <div class="portfolio-tags">
+        {{- range .Params.tags }}
+        <span class="tag">{{ . }}</span>
+        {{- end }}
+      </div>
+      {{- end }}
+      <a href="{{ .Permalink }}" class="read-more">Read more →</a>
+    </div>
+  </article>
+  {{- end }}
+  {{- end }}
+</div>
+
+{{- end }}

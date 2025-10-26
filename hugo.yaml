@@ -1,0 +1,100 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: "Yana Romaniuk"
+pagination:
+  disableAliases: false
+  pagerSize: 5
+  path: page
+theme: ["PaperMod"]
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+# Enable raw HTML rendering
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  env: production
+  defaultTheme: auto
+
+  profileMode:
+    enabled: true
+    title: "Drama, comma, grammar trauma" # website heading
+    subtitle: "Because strategic obsession over great docs has a name"
+    keywords: [Blog, Portfolio, PaperMod, Hugo]
+    author: Me
+    buttons:
+      - name: About
+        url: "/about"
+      - name: Blog
+        url: "/blog"
+      
+  socialIcons:
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/yana-romaniuk-28184a1b6/"
+    - name: "GitHub"
+      url: "https://github.com/yanchess"
+
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowWordCount: false
+  ShowToc: true
+  TocOpen: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: true
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - identifier: About
+      name: About
+      url: /about
+      weight: 10
+    - identifier: Portfolio
+      name: Portfolio
+      url: /portfolio
+      weight: 20
+    - identifier: Blog
+      name: Blog
+      url: /blog
+      weight: 30
+    - identifier: Archives
+      name: Archives
+      url: /archives
+      weight: 40
+    - identifier: Search
+      name: Search
+      url: /search
+      weight: 50
+
